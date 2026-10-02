@@ -1,0 +1,19 @@
+const std = @import("std");
+const lightmix = @import("lightmix");
+const synthesizers = @import("synthesizers");
+
+const T = f64;
+const Sine = synthesizers.sine.Sine;
+
+pub fn gen(init: std.process.Init) !lightmix.Wave(T) {
+    const allocator: std.mem.Allocator = init.arena.allocator();
+
+    const FREQUENCY: T = 440.0;
+    const SAMPLE_RATE: u32 = 44100;
+    const CHANNELS: u16 = 2;
+    const LENGTH: usize = SAMPLE_RATE * 2;
+    const VOLUME: T = 1.0;
+
+    const sine_440: lightmix.Wave(T) = try Sine.gen(T, allocator, FREQUENCY, SAMPLE_RATE, CHANNELS, LENGTH, VOLUME, .{});
+    return sine_440;
+}

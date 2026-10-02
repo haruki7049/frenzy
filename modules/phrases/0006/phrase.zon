@@ -1,0 +1,25 @@
+.{
+    .name = "Phrase 0006",
+    .notes = .{
+        // Bar 0: Dm9 (beats 0..2)
+        .{ .bar = 0, .beat = 0.00, .note = .{ .code = .d, .octave = 4 }, .duration_beats = 2.0, .volume = 0.85, .string = 0 },
+        .{ .bar = 0, .beat = 0.00, .note = .{ .code = .f, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 1 },
+        .{ .bar = 0, .beat = 0.00, .note = .{ .code = .a, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 2 },
+        .{ .bar = 0, .beat = 0.00, .note = .{ .code = .c, .octave = 5 }, .duration_beats = 2.0, .volume = 0.80, .string = 3 },
+        .{ .bar = 0, .beat = 0.00, .note = .{ .code = .e, .octave = 5 }, .duration_beats = 2.0, .volume = 0.85, .string = 4 },
+
+        // Bar 0: G13 (beats 2..4)
+        .{ .bar = 0, .beat = 2.00, .note = .{ .code = .g, .octave = 4 }, .duration_beats = 2.0, .volume = 0.85, .string = 0 },
+        .{ .bar = 0, .beat = 2.00, .note = .{ .code = .b, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 1 },
+        .{ .bar = 0, .beat = 2.00, .note = .{ .code = .d, .octave = 5 }, .duration_beats = 2.0, .volume = 0.80, .string = 2 },
+        .{ .bar = 0, .beat = 2.00, .note = .{ .code = .f, .octave = 5 }, .duration_beats = 2.0, .volume = 0.80, .string = 3 },
+        .{ .bar = 0, .beat = 2.00, .note = .{ .code = .e, .octave = 6 }, .duration_beats = 2.0, .volume = 0.85, .string = 4 },
+
+        // Bar 1: CM7 (play_pattern_timed [0.5, 0.5, 0.5, 2.5])
+        .{ .bar = 1, .beat = 0.00, .note = .{ .code = .c, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 0 },
+        .{ .bar = 1, .beat = 0.50, .note = .{ .code = .e, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 1 },
+        .{ .bar = 1, .beat = 1.00, .note = .{ .code = .g, .octave = 4 }, .duration_beats = 2.0, .volume = 0.80, .string = 2 },
+        .{ .bar = 1, .beat = 1.50, .note = .{ .code = .b, .octave = 4 }, .duration_beats = 2.5, .volume = 0.85, .string = 3 },
+        .{ .bar = 1, .beat = 1.50, .note = .{ .code = .e, .octave = 5 }, .duration_beats = 2.5, .volume = 0.75, .string = 4 },
+    },
+}
